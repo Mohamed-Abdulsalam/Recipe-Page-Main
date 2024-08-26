@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: outfit;
+  background-color: #f3e5d8;
+}
+.main {
+  width: 700px;
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+/* Start Header */
+.main header img {
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+.main header h1 {
+  font-family: young serif;
+  padding-left: 27px;
+  color: #313131;
+}
+.main header p {
+  width: 675px;
+  padding-left: 28px;
+  padding-top: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #807a7a;
+}
+/* End Header */
+/* Start Section */
+section {
+  width: 640px;
+  height: 150px;
+  background-color: #fff0ff;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+section .time {
+  position: relative;
+  padding: 20px 40px;
+}
+section .time h3 {
+  margin-left: -13px;
+  margin-bottom: 10px;
+  color: #772c77;
+}
+section .time ul {
+  margin: 10px;
+}
+section .time ul li {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #636262;
+  list-style: none;
+}
+section .time ul .dot::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #772c77;
+  margin-left: -26px;
+  margin-top: 6px;
+}
+section .time ul li span {
+  color: #807a7a;
+}
+/* End Section */
+/* Start Ingredients */
+.ingred {
+  position: relative;
+  width: 640px;
+  margin: auto;
+  border-bottom: 1px solid #dbd9d9;
+}
+.ingred h2 {
+  font-family: young serif;
+  color: #863131;
+}
+.ingred ul {
+  margin: 15px 22px;
+}
+.ingred ul li {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #807a7a;
+  list-style: none;
+}
+.ingred ul .dot-two::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #863131;
+  margin-left: -26px;
+  margin-top: 6px;
+}
+/* End Ingredients */
+/* Start Instructions */
+.instr {
+  position: relative;
+  counter-reset: instructions;
+  width: 640px;
+  margin: auto;
+  border-bottom: 1px solid #dbd9d9;
+}
+.instr h2 {
+  font-family: young serif;
+  color: #863131;
+  margin-top: 20px;
+}
+.instr .para {
+  margin: 15px 22px;
+  color: #807a7a;
+}
+.instr .para p {
+  margin-left: 15px;
+  padding-bottom: 10px;
+}
+.instr .para p span {
+  color: #636262;
+  font-weight: bold;
+}
+.instr .para p::before {
+  position: absolute;
+  counter-increment: instructions;
+  content: counter(instructions) ".";
+  margin-left: -30px;
+  color: #863131;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* End Instructions */
+/* Start Nutrition */
+.nutr {
+  width: 640px;
+  margin: auto;
+}
+.nutr h2 {
+  font-family: young serif;
+  color: #863131;
+  margin-top: 20px;
+}
+.nutr p {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  color: #807a7a;
+}
+.nutr table {
+  width: 640px;
+  border-spacing: 0px;
+}
+.nutr table tr td {
+  padding: 15px 30px;
+  color: #807a7a;
+}
+.nutr table tr td:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  color: #863131;
+  font-weight: bold;
+}
+.nutr table tr td:not(.no-border) {
+  border-bottom: 1px solid #dbd9d9;
+}
+/* End Nutrition */
